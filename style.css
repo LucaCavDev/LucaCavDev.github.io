@@ -1,15 +1,41 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
 }
 
-.container {
-    min-height: 100vh;
-    width: auto;
-    background-color: black;
-}
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
 
-h1 {
+    background-color: green;
     color: blue;
 }
+
+.backG {
+    background: url('https://images.unsplash.com/photo-1554396077-f236be15052c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80') center/cover;
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: calc(100vw + 100px);
+    height: calc(100vh + 100px);
+    z-index: -1;
+    filter: blur(0px);
+    
+}
+
+
+
+.loading {
+
+    font-size: 100px;
+    color: black;
+
+}
+
